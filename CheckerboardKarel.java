@@ -57,6 +57,9 @@ public class CheckerboardKarel extends SuperKarel {
 		if(facingSouth()) {
 			turnAround();
 		}
+		if(facingNorth()){
+			
+		}
 	}
 	
 }
