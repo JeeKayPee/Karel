@@ -41,7 +41,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		mapExternal();
 		
 		// dive into internal spiral
-		//mapInternal();
+		mapInternal();
 		
 		// move down to 1st Street
 		decend();
