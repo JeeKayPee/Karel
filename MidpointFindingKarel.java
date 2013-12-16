@@ -119,6 +119,12 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(facingEast())  turnLeft();
 	}
 	
+	private void adjustToEast(){
+		if(facingNorth()) turnRight();
+		if(facingWest())  turnAround();
+		if(facingSouth()) turnLeft();
+	}
+	
 	
 	private void moveToWall() {
 		while(frontIsClear()) {
