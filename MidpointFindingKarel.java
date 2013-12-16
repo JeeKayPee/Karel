@@ -57,7 +57,8 @@ public class MidpointFindingKarel extends SuperKarel {
 	// method to map the external circumference -- first round
 	private void mapExternal() {
 		adjustToNorth();
-		moveToWall();
+		moveToWallWithBeepers();
+		
 	}
 	
 	
