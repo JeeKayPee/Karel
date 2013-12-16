@@ -58,7 +58,16 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void mapExternal() {
 		adjustToNorth();
 		moveToWallWithBeepers();
-		
+		turnRight(); // adjust Karel to face East
+		moveToWallWithBeepers();
+		turnRight(); // adjust Karel to face South
+		moveToWallWithBeepers();
+		turnRight(); // adjust Karel to face West
+		moveToWallWithBeepers(); 
+		// at this time, 1st St. 1st Ave. would have 2 beepers, pick one up and back up one step
+		pickBeeper();
+		turnAround();
+		move();
 	}
 	
 	
@@ -70,8 +79,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		adjustToSouth();
 		// decending
 		moveToWall();
-		// Karel facing West
-		adjustToWest();
+		// adjust Karel facing West
+		turnRight();
 	}
 	
 	// method to adjust Karel to South
