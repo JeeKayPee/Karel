@@ -4,6 +4,7 @@
  * Karel will draw a checkerboard using beepers. 
  * Karel will instantiate SuperKarel Class, additional turnRight() and turnAround()
  * method are available.
+ * Karel will adapt to various checkboard sizes, and he will never stop until finished his job!
  */
 
 import stanford.karel.*;
