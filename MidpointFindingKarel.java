@@ -55,6 +55,8 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 	
 	// method to map the external circumference -- first round
+	// pre-condition : Karel sits at 1st St. 1st Ave.
+	// post-condition: Karel sits at 1st St. 2nd Ave. facing East
 	private void mapExternal() {
 		adjustToNorth();
 		moveToWallWithBeepers();
@@ -70,6 +72,10 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 	
 	// method to map the internal circumference -- second round
+	private void mapInternal() {
+		adjust
+	}
+	
 	
 	
 	// method to decend Karel to 1st Street
