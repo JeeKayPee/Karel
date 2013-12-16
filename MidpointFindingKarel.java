@@ -76,6 +76,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		adjustToNorth();
 		while () {
 			moveToTrailingBeeper();
+			turnRight();
 		}
 	}
 	
