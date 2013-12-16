@@ -67,7 +67,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnRight(); // adjust Karel to face West
 		moveToWallWithBeepers(); 
 		// at this time, Karel at 1st St. 1st Ave. back up one step
-		//turnAround();
+		turnRight();
 		//move();
 	}
 	
