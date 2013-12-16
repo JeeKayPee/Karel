@@ -69,6 +69,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		move();
 	}
 	
+	// method to map the internal circumference -- second round
+	
 	
 	// method to decend Karel to 1st Street
 	// pre-condition: Karel could face any direction
