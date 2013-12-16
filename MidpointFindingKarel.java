@@ -29,7 +29,7 @@
  * 1 *   * <- *  - *
  *   1   2    3    4
  *   
- *   a world 4 by 6, middle point is 3
+ *   a world 4 by 6, middle point is 3 using this algorithm
  */
 
 import stanford.karel.*;
