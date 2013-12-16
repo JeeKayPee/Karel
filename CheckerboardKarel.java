@@ -27,6 +27,7 @@ public class CheckerboardKarel extends SuperKarel {
 		while(frontIsClear()) {
 			putBeeper();
 			
+			// move twice to the next location for dropping a beeper
 			for (int i = 0; i < 2; i ++) {
 				move();
 			}
