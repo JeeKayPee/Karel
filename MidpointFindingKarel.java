@@ -37,7 +37,47 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 	
 	public void run() {
+		// mapping external walls
+		mapExternal();
 		
+		// dive into internal spiral
+		mapInternal();
+		
+		// move down to 1st Street
+		decend();
+		
+		// set the marker beeper
+		paintCorner(RED);
+		
+		// clean up trail
+		cleanUp();
+		
+	}
+	
+	// method to decend Karel to 1st Street
+	// pre-condition: Karel could face any direction
+	// post-condition: Karel decend to first Street, facing West
+	private void decend() {
+		// Karel facing south, prepare to decend
+		adjustToSouth();
+		// decending
+		moveToWall();
+		// Karel facing West
+		adjustToWest();
+	}
+	
+	// method to adjust Karel to South
+	private void adjustToSouth(){
+		if(facingNorth()) turnAround();
+		if(facingWest())  turnLeft();
+		if(facingEast())  turnRight();
+	}
+	
+	// methid to adjust Karel to West
+	private void adjustToWest() {
+		if(facingNorth()) turnLeft();
+		if(facingSouth()) turnRight();
+		if(facingEast()) turnAround();
 	}
 	
 
