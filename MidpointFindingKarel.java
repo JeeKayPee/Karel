@@ -82,6 +82,9 @@ public class MidpointFindingKarel extends SuperKarel {
 	
 	// method to move Karel until it hits trailing beeper, then Karel stops and back up one step
 	private void moveToTrailingBeeper(){
+		while(noBeepersPresent()){
+			move();
+		}
 		
 	}
 	
