@@ -38,7 +38,7 @@ public class CheckerboardKarel extends SuperKarel {
 				if (frontIsClear()) {
 					move();
 				} else {
-					adjustToNorth();
+					break;
 				}
 			}
 		}
