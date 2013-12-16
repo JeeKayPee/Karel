@@ -115,16 +115,10 @@ public class MidpointFindingKarel extends SuperKarel {
 	// method to adjust Karel to North
 	private void adjustToNorth(){
 		if(facingSouth()) turnAround();
-		if(facingWest())  turnRight();
-		if(facingEast())  turnLeft();
+		if(facingWest())  turnLeft();
+		if(facingEast())  turnRight();
 	}
 	
-	// method to adjust Karel to West
-	private void adjustToWest() {
-		if(facingNorth()) turnLeft();
-		if(facingSouth()) turnRight();
-		if(facingEast()) turnAround();
-	}
 	
 	private void moveToWall() {
 		while(frontIsClear()) {
