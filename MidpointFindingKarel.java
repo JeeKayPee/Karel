@@ -68,7 +68,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		moveToWallWithBeepers(); 
 		// at this time, Karel at 1st St. 1st Ave. back up one step
 		turnRight();
-		//move();
+		move();
 	}
 	
 	// method to map the internal circumference -- second round
