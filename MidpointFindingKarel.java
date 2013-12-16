@@ -57,6 +57,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	// method to map the external circumference -- first round
 	private void mapExternal() {
 		adjustToNorth();
+		moveToWall();
 	}
 	
 	
@@ -86,7 +87,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(facingEast())  turnLeft();
 	}
 	
-	// methid to adjust Karel to West
+	// method to adjust Karel to West
 	private void adjustToWest() {
 		if(facingNorth()) turnLeft();
 		if(facingSouth()) turnRight();
@@ -99,5 +100,12 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 	}
 	
+	// method to move to wall while putting down beepers
+	private void moveToWallWithBeepers() {
+		while(frontIsClear()){
+			putBeeper();
+			move();
+		}
+	}
 
 }
