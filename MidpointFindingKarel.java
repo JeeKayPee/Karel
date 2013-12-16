@@ -54,6 +54,12 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 	}
 	
+	// method to map the external circumference -- first round
+	private void mapExternal() {
+		adjustToNorth();
+	}
+	
+	
 	// method to decend Karel to 1st Street
 	// pre-condition: Karel could face any direction
 	// post-condition: Karel decend to first Street, facing West
@@ -71,6 +77,13 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(facingNorth()) turnAround();
 		if(facingWest())  turnLeft();
 		if(facingEast())  turnRight();
+	}
+	
+	// method to adjust Karel to North
+	private void adjustToNorth(){
+		if(facingSouth()) turnAround();
+		if(facingWest())  turnRight();
+		if(facingEast())  turnLeft();
 	}
 	
 	// methid to adjust Karel to West
