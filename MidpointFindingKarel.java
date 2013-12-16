@@ -80,5 +80,11 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(facingEast()) turnAround();
 	}
 	
+	private void moveToWall() {
+		while(frontIsClear()) {
+			move();
+		}
+	}
+	
 
 }
