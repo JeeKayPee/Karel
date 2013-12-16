@@ -77,6 +77,9 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (true) { // M.H. modify this condition
 			moveToTrailingBeeper();
 			turnRight();
+			
+			// determine if Karel reaches its destination
+			if()
 		}
 	}
 	
