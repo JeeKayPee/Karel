@@ -74,7 +74,6 @@ public class MidpointFindingKarel extends SuperKarel {
 	// method to map the internal circumference -- second round
 	private void mapInternal() {
 		adjustToNorth();
-		paintCorner(YELLOW);
 		while (true) { // M.H. modify this condition
 			moveToTrailingBeeper();
 			turnRight();
