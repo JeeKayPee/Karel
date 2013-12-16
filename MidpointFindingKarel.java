@@ -73,6 +73,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	
 	// method to map the internal circumference -- second round
 	private void mapInternal() {
+		turnLeft();
 		adjustToNorth();
 		paintCorner(YELLOW);
 		while (true) { // M.H. modify this condition
