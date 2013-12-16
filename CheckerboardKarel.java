@@ -19,7 +19,7 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 			turn
 			drawRow();         // draw check pattern in a row
-			adjustNorth();
+			adjustToNorth();
 		}
 	}
 	
@@ -33,7 +33,7 @@ public class CheckerboardKarel extends SuperKarel {
 				if (frontIsClear()) {
 					move();
 				} else {
-					adjustNorth();
+					adjustTONorth();
 				}
 			}
 		}
@@ -42,7 +42,7 @@ public class CheckerboardKarel extends SuperKarel {
 	// method to adjust Karel's direction to face North
 	// pre-condition : Karel faces any direction
 	// post-condition: Karel is facing North
-	private void adjustNorth(){
+	private void adjustToNorth(){
 		if (facingEast()) {
 			turnLeft();
 		}
