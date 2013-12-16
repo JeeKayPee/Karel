@@ -12,7 +12,24 @@
 
 /*
  * Implementation algorithm used in this class is not optimal, new algorithm 
- * will be 
+ * will be continue explored.
+ * 
+ * Implementation details:
+ * 
+ * 6 * - * -  * -> *
+ *   |             |
+ * 5 *   * -> *    *
+ *   |   |    |    |
+ * 4 *   *    *    *
+ * 	 |   |    |    |
+ * 3 *   *    *    *
+ *   |   |    |    |
+ * 2 *   *    *    *
+ *   |   |         |
+ * 1 *   * <- *  - *
+ *   1   2    3    4
+ *   
+ *   a world 4 by 6, middle point is 3
  */
 
 import stanford.karel.*;
