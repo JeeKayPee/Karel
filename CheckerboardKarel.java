@@ -30,14 +30,17 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	// method to draw a check pattern in a row
 	private void drawRow () {
-		putBeeper();
+		putBeeper();	// always put down the first beeper
+		
 		while(frontIsClear()) {
 			
-			// move twice to the next location for dropping a beeper
+			// move twice to the next location for putting down a beeper
 			for (int i = 0; i < 2; i ++) {
 				if (frontIsClear()) {
 					move();
-				} 
+				} else {
+					break;
+				}
 			}
 			putBeeper();
 		}
