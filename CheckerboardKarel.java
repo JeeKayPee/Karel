@@ -17,7 +17,12 @@ public class CheckerboardKarel extends SuperKarel {
 		adjustToNorth();
 		while(frontIsClear()) { // check if the the front of Karel is clear
 			move();
-			turn;
+			if(rightIsBlocked()) {
+				turnLeft();
+			}
+			if (leftIsBlocked()) {
+				turnRight();
+			}
 			drawRow();         // draw check pattern in a row
 			adjustToNorth();
 		}
