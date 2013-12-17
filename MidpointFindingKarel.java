@@ -47,10 +47,11 @@ public class MidpointFindingKarel extends SuperKarel {
 		decend();
 		
 		// set the marker beeper
-		paintCorner(RED);
+		//paintCorner(RED);
 		
 		// clean up trail
 		cleanUp();
+		paintCorner
 		
 		// return to 1st St. 1st Ave.
 		returnOrigin();
