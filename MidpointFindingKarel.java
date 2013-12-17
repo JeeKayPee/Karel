@@ -203,6 +203,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			cleanUpRow();
 		} else {
 			turnAround();
+			cleanUpRow();
 		}
 
 	}
