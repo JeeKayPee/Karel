@@ -197,7 +197,9 @@ public class MidpointFindingKarel extends SuperKarel {
 				if (leftIsBlocked()) { // one most West Ave.
 					turnRight();
 				}
-			} 
+			} else {
+				adjustToEast();
+			}
 		}
 	
 		// OBOB issue, need to clean up one last time
