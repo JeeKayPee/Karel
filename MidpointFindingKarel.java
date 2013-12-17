@@ -86,7 +86,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			// otherwise, Karel needs to keep mapping internal trace
 			move();
 			if(beepersPresent()) { // reaches central point
-				moveBackwards();
+				moveBackward();
 				paintCorner(BLUE);
 				break;
 			} else {
