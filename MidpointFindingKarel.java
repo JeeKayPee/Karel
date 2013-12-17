@@ -200,6 +200,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			} 
 		}
 	
+		paintCorner(PINK);
 		// OBOB issue, need to clean up one last time
 		if (leftIsBlocked()) {
 			cleanUpRow();
