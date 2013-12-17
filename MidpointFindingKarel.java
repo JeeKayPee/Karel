@@ -51,7 +51,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 		// clean up trail
 		cleanUp();
-		paintCorner
+		paintCorner(YELLOW);
 		
 		// return to 1st St. 1st Ave.
 		returnOrigin();
