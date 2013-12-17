@@ -230,9 +230,13 @@ public class MidpointFindingKarel extends SuperKarel {
 	
 	// method to march Karel to the middle point in the first St.
 	private void marchMiddle() {
-		while(cornerColorIs(null)) {
+		
+		while(cornerColorIs(null)) { // hasn't reach the marked middle point yet
 			move();
 		}
+		
+		// there you go!
+		putBeeper();
 	}
 	
 }
