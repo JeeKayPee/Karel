@@ -142,10 +142,18 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(facingEast())  turnLeft();
 	}
 	
+	// method to adjust Karel to East
 	private void adjustToEast(){
 		if(facingNorth()) turnRight();
 		if(facingWest())  turnAround();
 		if(facingSouth()) turnLeft();
+	}
+	
+	// method to adjust Karel to West
+	private void adjustToWest(){
+		if(facingNorth()) turnLeft();
+		if(facingEast())  turnAround();
+		if(facingSouth()) turnRight();
 	}
 	
 	
@@ -163,4 +171,11 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 	}
 
+	// method to clean up Karel's tracing mess (pick up all beepers)
+	private void cleanup() {
+		// return Karel to 1st St. 1st Ave.
+		adjustToWest();
+		
+	}
+	
 }
