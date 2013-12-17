@@ -199,6 +199,7 @@ public class MidpointFindingKarel extends SuperKarel {
 				}
 			} else {
 				adjustToEast();
+				paintCorner(PINK);
 			}
 		}
 	
