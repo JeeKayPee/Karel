@@ -179,7 +179,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		moveToWall();
 		turnAround(); // facing East, ready to clean up
 		
-		while (LeftIsClear()) {
+		while (leftIsClear()) {
 			cleanUpRow(); // clean up one row
 			adjustToNorth(); // move up to the next street
 			move();
