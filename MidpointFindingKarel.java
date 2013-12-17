@@ -187,16 +187,20 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnAround(); // facing East, ready to clean up
 		
 		while (leftIsClear()) {
-			cleanUpRow(); // clean up one row
-			adjustToNorth(); // move up to the next street
-			move();
-			if (rightIsBlocked()) { // on most East Ave.
-				turnLeft();
+			if (rightIsClear()) {
+				cleanUpRow(); // clean up one row
+				adjustToNorth(); // move up to the next street
+				move();
+				if (rightIsBlocked()) { // on most East Ave.
+					turnLeft();
+				}
+				if (leftIsBlocked()) { // one most West Ave.
+					turnRight();
+				}
+			} else {
+				turnAround();
 			}
-			if (leftIsBlocked()) { // one most West Ave.
-				turnRight();
-			}
-			//adjustToNorth(); // Karel facing North to check if it reaches the highest street
+
 		}
 		// OBOB issue, need to clean up one last time
 		if (leftIsBlocked()) {
