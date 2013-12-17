@@ -52,6 +52,12 @@ public class MidpointFindingKarel extends SuperKarel {
 		// clean up trail
 		cleanUp();
 		
+		// return to 1st St. 1st Ave.
+		returnOrigin();
+		
+		// march to middle point in 1st St.
+		marchMiddle();
+		
 	}
 	
 	// method to map the external circumference -- first round
@@ -209,6 +215,17 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 		}
 		pickBeeper();
+	}
+	
+	// method to return Karel to the origin location, i.e. 1st Street 1st Ave.
+	// pre-condition : Karel in any position in the map
+	// post-condition: Karel returns to origin and faces East
+	private void returnOrigin() {
+		adjustToSouth();
+		moveToWall();
+		adjustToWest();
+		moveToWall();
+		turnAround();
 	}
 	
 }
