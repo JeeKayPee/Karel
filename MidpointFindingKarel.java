@@ -201,6 +201,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			}
 			move();
 		}
+		pickBeeper();
 	}
 	
 }
