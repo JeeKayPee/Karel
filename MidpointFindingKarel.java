@@ -179,7 +179,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		moveToWall();
 		turnAround(); // facing East, ready to clean up
 		
-		while (frontIsClear()) {
+		while (LeftIsClear()) {
 			cleanUpRow(); // clean up one row
 			adjustToNorth(); // move up to the next street
 			move();
@@ -189,11 +189,14 @@ public class MidpointFindingKarel extends SuperKarel {
 			if (leftIsBlocked()) { // one most West Ave.
 				turnRight();
 			}
-			adjustToNorth(); // Karel facing North to check if it reaches the highest street
+			//adjustToNorth(); // Karel facing North to check if it reaches the highest street
 		}
 
 	}
 	
+	// method to pick up all beepers in a row
+	// pre-condition : 
+	// post-condition: Karel picks up all beepers in a row and facing East/West
 	private void cleanUpRow() {
 		while(frontIsClear()){
 			if(beepersPresent()){
