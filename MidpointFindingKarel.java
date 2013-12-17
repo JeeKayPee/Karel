@@ -187,9 +187,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnAround(); // facing East, ready to clean up
 		
 		while (leftIsClear()) {
-			if (frontIsClear()) {
+			
 				cleanUpRow(); // clean up one row
 				adjustToNorth(); // move up to the next street
+				if (frontIsClear()) {
 				move();
 				if (rightIsBlocked()) { // on most East Ave.
 					turnLeft();
