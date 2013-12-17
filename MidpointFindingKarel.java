@@ -79,7 +79,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			turnRight();
 			
 			// determine if Karel reaches its destination
-			if()
+			//if()
 		}
 	}
 	
