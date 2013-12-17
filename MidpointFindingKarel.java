@@ -83,6 +83,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			// determine if Karel reaches its destination -- middle point
 			move();
 			if(beepersPresent()) {
+				paintCorner(BLUE);
 				break;
 			} else {
 				moveBackward();
