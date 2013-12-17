@@ -181,8 +181,19 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 		while (leftIsClear()) {
 			cleanUpRow();
+			adjustToNorth();
+			move();
 		}
 
+	}
+	
+	private void cleanUpRow() {
+		while(frontIsClear()){
+			if(beepersPresent()){
+				pickBeeper();
+			}
+			move();
+		}
 	}
 	
 }
