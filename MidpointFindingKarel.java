@@ -188,9 +188,9 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 		while (leftIsClear()) {
 			
-				cleanUpRow(); // clean up one row
-				adjustToNorth(); // move up to the next street
-				if (frontIsClear()) {
+			cleanUpRow(); // clean up one row
+			adjustToNorth(); // move up to the next street
+			if (frontIsClear()) {
 				move();
 				if (rightIsBlocked()) { // on most East Ave.
 					turnLeft();
@@ -198,7 +198,6 @@ public class MidpointFindingKarel extends SuperKarel {
 				if (leftIsBlocked()) { // one most West Ave.
 					turnRight();
 				}
-				paintCorner(GREEN);
 			} else {
 				adjustToEast();
 				paintCorner(PINK);
