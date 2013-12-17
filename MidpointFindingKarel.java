@@ -191,6 +191,10 @@ public class MidpointFindingKarel extends SuperKarel {
 			}
 			//adjustToNorth(); // Karel facing North to check if it reaches the highest street
 		}
+		// OBOB issue, need to clean up one last time
+		if (leftIsBlocked()) {
+			cleanUpRow();
+		}
 
 	}
 	
