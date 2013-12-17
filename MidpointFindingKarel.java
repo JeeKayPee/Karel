@@ -172,10 +172,17 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	// method to clean up Karel's tracing mess (pick up all beepers)
-	private void cleanup() {
-		// return Karel to 1st St. 1st Ave.
-		adjustToWest();
+	private void cleanUp() {
 		
+		adjustToWest(); // return Karel to 1st St. 1st Ave.
+		
+		moveToWall();
+		turnAround(); // facing East, ready to clean up
+		
+		while (leftIsClear()) {
+			cleanUpRow();
+		}
+
 	}
 	
 }
