@@ -76,13 +76,17 @@ public class MidpointFindingKarel extends SuperKarel {
 	// post-condition: Karel reaches the central point of map, could be facing any direction
 	private void mapInternal() {
 		adjustToNorth();
-		move();
-		while (noBeepersPresent()) { // M.H. modify this condition
+		while (true) { // M.H. modify this condition
 			moveToTrailingBeeper();
 			turnRight();
 			
-			// determine if Karel reaches its destination -- middle point 
-			//if
+			// determine if Karel reaches its destination -- middle point
+			move();
+			if(beepersPresent()) {
+				break;
+			} else {
+				moveBackward();
+			}
 		}
 	}
 	
@@ -93,7 +97,12 @@ public class MidpointFindingKarel extends SuperKarel {
 			putBeeper();
 			move();
 		}
-		// hits trailing beeper
+		// hits trailing beeper, Karel back up one step
+		moveBackward();
+	}
+	
+	// method to move Karel backward
+	private void moveBackward () {
 		turnAround();
 		move();
 		turnAround();
