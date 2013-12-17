@@ -197,6 +197,7 @@ public class MidpointFindingKarel extends SuperKarel {
 				if (leftIsBlocked()) { // one most West Ave.
 					turnRight();
 				}
+				paintCorner(GREEN);
 			} else {
 				adjustToEast();
 				paintCorner(PINK);
