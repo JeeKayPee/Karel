@@ -72,14 +72,16 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 	
 	// method to map the internal circumference -- second round
+	// pre-condition : Karel finished exterior recon
+	// post-condition: Karel reaches the central point of map, could be facing any direction
 	private void mapInternal() {
 		adjustToNorth();
-		while (true) { // M.H. modify this condition
+		while (noBeepersPresent()) { // M.H. modify this condition
 			moveToTrailingBeeper();
 			turnRight();
 			
-			// determine if Karel reaches its destination
-			//if()
+			// determine if Karel reaches its destination -- middle point 
+			//if
 		}
 	}
 	
