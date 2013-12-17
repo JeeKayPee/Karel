@@ -87,7 +87,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 			if(beepersPresent()) { // reaches central point
 				moveBackwards();
-				paintCorner(BLUE);
+				paintCorner(BLUE); // mark the central point
 				break;
 			} else {
 				moveBackwards();
