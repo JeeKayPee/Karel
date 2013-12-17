@@ -50,7 +50,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		paintCorner(RED);
 		
 		// clean up trail
-		//cleanUp();
+		cleanUp();
 		
 	}
 	
