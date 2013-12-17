@@ -86,11 +86,11 @@ public class MidpointFindingKarel extends SuperKarel {
 			// otherwise, Karel needs to keep mapping internal trace
 			move();
 			if(beepersPresent()) { // reaches central point
-				moveBackward();
+				moveBackwards();
 				paintCorner(BLUE);
 				break;
 			} else {
-				moveBackward();
+				moveBackwards();
 			}
 		}
 	}
@@ -103,11 +103,11 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 		}
 		// hits trailing beeper, Karel back up one step
-		moveBackward();
+		moveBackwards();
 	}
 	
 	// method to move Karel backward
-	private void moveBackward () {
+	private void moveBackwards () {
 		turnAround();
 		move();
 		turnAround();
