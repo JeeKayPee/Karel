@@ -201,6 +201,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		// OBOB issue, need to clean up one last time
 		if (leftIsBlocked()) {
 			cleanUpRow();
+		} else {
+			turnAround();
 		}
 
 	}
