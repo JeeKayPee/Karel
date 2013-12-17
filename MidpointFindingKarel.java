@@ -81,8 +81,12 @@ public class MidpointFindingKarel extends SuperKarel {
 			turnRight();
 			
 			// determine if Karel reaches its destination -- middle point
+			// move right one step to poke if there is beeper exists
+			// if there is, then Karel reaches the central point
+			// otherwise, Karel needs to keep mapping internal trace
 			move();
-			if(beepersPresent()) {
+			if(beepersPresent()) { // reaches central point
+				moveBackwards();
 				paintCorner(BLUE);
 				break;
 			} else {
