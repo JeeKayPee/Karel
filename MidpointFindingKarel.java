@@ -183,6 +183,12 @@ public class MidpointFindingKarel extends SuperKarel {
 			cleanUpRow();
 			adjustToNorth();
 			move();
+			if (rightIsBlocked()) {
+				turnLeft();
+			}
+			if (leftIsBlocked()) {
+				turnRight();
+			}
 		}
 
 	}
