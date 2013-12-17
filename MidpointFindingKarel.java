@@ -122,6 +122,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		adjustToSouth();
 		// decending
 		moveToWall();
+		// mark the middle point in ORANGE
+		paintCorner(ORANGE);
 		// adjust Karel facing West
 		turnRight();
 	}
